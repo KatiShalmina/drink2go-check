@@ -9,12 +9,12 @@
 }
 
 @mixin regular-font {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
 }
 
 @mixin bold-font {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
 }
 
