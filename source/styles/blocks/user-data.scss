@@ -1,0 +1,18 @@
+.user-data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-data__link {
+  width: 40px;
+  height: 40px;
+  color: $color-base;
+}
+
+.user-data__link-caption {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

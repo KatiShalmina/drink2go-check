@@ -1,5 +1,34 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px;
+  }
+}
+
+.header__logo {
+  margin-right: 98px;
+}
+
+.header__navigation {
+  @include reset-list;
+}
+
+.header__user-list {
+  @include reset-list;
+}
+
+.header__button {
+  margin-right: -10px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

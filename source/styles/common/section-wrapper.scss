@@ -1,0 +1,12 @@
+.section-wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 748px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1400px;
+  }
+}

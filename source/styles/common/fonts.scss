@@ -1,1 +1,3 @@
 /* здесь подключите шрифты */
+@include font-face(400, url("../../fonts/montserrat-regular.woff2") format("woff2"));
+@include font-face(700, url("../../fonts/montserrat-700.woff2") format("woff2"));
