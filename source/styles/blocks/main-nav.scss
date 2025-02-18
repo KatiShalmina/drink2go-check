@@ -1,0 +1,19 @@
+.main-nav__list {
+  @include reset-list;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+  }
+}
+
+.main-nav__link {
+  color: $color-base;
+}

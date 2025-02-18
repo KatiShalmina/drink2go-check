@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+}
+
+.logo__trademark {
+  display: block;
+}
+
+.logo__caption {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
