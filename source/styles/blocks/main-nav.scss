@@ -5,15 +5,54 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
-    width: 436px;
+    width: 420px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 477px;
+    gap: 20px;
+    width: 600px;
   }
 }
 
 .main-nav__link {
+  @include middle-font;
+  font-size: 12px;
+  line-height: 16px;
   color: $color-base;
+  text-transform: uppercase;
+  transition:
+    color 0.4s ease,
+    background-color 0.4s ease;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: $color-primary;
+  }
+
+  &:active {
+    background-color: #f0ebff;
+  }
+}
+
+.main-nav__link--current {
+  position: relative;
+  color: $color-primary;
+}
+
+.main-nav__link--current::after {
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -21px;
+    height: 2px;
+    background-color: $bg-secondary;
+  }
 }

@@ -1,5 +1,21 @@
 .logo {
   display: block;
+  transition: opacity 0.4s ease;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__trademark {
@@ -11,5 +27,9 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    width: 130px;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-base;
   }
 }
