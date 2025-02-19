@@ -1,32 +1,41 @@
 .header__wrapper {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 10px;
+    padding: 20px 30px 20px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px;
+    padding: 20px 40px;
   }
 }
 
 .header__logo {
   margin-right: 98px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 158px;
+  }
 }
 
-.header__navigation {
-  @include reset-list;
-}
+// .header__navigation {
+
+// }
 
 .header__user-list {
-  @include reset-list;
+  justify-content: end;
 }
 
 .header__button {
+  display: block;
   margin-right: -10px;
-  margin-left: auto;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;

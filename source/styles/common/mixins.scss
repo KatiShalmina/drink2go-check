@@ -18,6 +18,11 @@
   font-weight: 700;
 }
 
+@mixin middle-font {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+}
+
 @mixin reset-list {
   margin: 0;
   padding: 0;

@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon-drink-to-go.ico" sizes="16x16">
+  <link rel="icon" href="favicon-drink-to-go.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png" type="image/png">
   <script src="scripts/index.js" defer></script>
@@ -43,14 +43,14 @@
         </ul>
       </nav>
       <ul class="header__user-list user-data">
-        <li class="user-data__item">
-          <a class="user-data__link" href="#">
-            <span class="user-data__link-caption">Войти</span>
+        <li class="user-data__item user-data__item--user">
+          <a class="user-data__link user-data__link--user" href="#">
+            <span class="visually-hidden">Войти в личный кабинет.</span>
           </a>
         </li>
-        <li class="user-data__item">
-          <a class="user-data__link" href="#">
-            <span class="user-data__link-caption">Корзина</span>
+        <li class="user-data__item user-data__item--basket">
+          <a class="user-data__link user-data__link--basket" href="#">
+            <span class="visually-hidden">Перейти в корзину.</span>
           </a>
         </li>
       </ul>
@@ -174,7 +174,7 @@
               </li>
               <li class="filter__item">
                 <label class="filter__label" for="peru">Перу</label>
-                <input class="filter__input filter__input--country" id="peru" type="checkbox" name="from-pery" disabled>
+                <input class="filter__input filter__input--country" id="peru" type="checkbox" name="from-peru" disabled>
               </li>
             </ul>
           </fieldset>
