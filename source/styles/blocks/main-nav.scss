@@ -15,7 +15,7 @@
 }
 
 .main-nav__link {
-  @include middle-font;
+  @include font-500;
   font-size: 12px;
   line-height: 16px;
   color: $color-base;
