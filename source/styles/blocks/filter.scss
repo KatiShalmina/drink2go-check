@@ -1,0 +1,19 @@
+.filter__unit {
+  border: none;
+}
+
+.filter__list {
+  @include reset-list;
+}
+
+.filter__input--country {
+  appearance: none;
+}
+
+.filter__item:has(.filter__input--country:hover) {
+  opacity: 0.5;
+}
+
+.filter__input--milk {
+  appearance: none;
+}

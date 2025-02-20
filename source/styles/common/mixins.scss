@@ -13,14 +13,19 @@
   font-weight: 400;
 }
 
-@mixin bold-font {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 700;
-}
-
-@mixin middle-font {
+@mixin font-500 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
+}
+
+@mixin font-600 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-700 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 @mixin reset-list {
