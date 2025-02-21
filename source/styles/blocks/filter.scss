@@ -1,5 +1,15 @@
+.filter__form {
+  margin: 0 0 40px;
+}
+
 .filter__unit {
+  margin: 0 0 30px;
+  padding: 0;
   border: none;
+}
+
+.filter__unit-title {
+  padding: 0;
 }
 
 .filter__list {
@@ -16,4 +26,19 @@
 
 .filter__input--milk {
   appearance: none;
+}
+
+.filter__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter__button {
+  width: 100%;
+}
+
+.filter__button--reset {
+  color: $color-primary;
+  background-color: $bg-base;
 }

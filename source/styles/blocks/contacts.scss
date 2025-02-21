@@ -1,0 +1,60 @@
+.contacts {
+  @include reset-list;
+}
+
+.contacts__item:last-child {
+  margin: 0 0 21px;
+}
+
+.contacts__adress {
+  position: relative;
+  padding: 10px 0 6px 19px;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts__adress::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 16px;
+  top: 10px;
+  left: 0;
+  background-image: url("../../icons/stack.svg#adress-icon");
+  background-size: 13px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__phone {
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 19px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-base;
+  transition: color 0.4s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: #9070ec;
+  }
+
+  &:active {
+    color: #593cac;
+  }
+}
+
+.contacts__phone::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 16px;
+  top: 10px;
+  left: 0;
+  background-image: url("../../icons/stack.svg#phone-icon");
+  background-size: 13px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

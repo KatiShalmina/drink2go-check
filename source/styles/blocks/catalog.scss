@@ -7,11 +7,19 @@
 }
 
 .catalog__badge {
+  margin: 0 0 4px;
   text-align: center;
 }
 
-.ctatlog__title {
+.catalog__title {
+  margin: 0 0 20px;
   font-size: 24px;
   line-height: 36px;
   text-align: center;
+}
+
+.catalog__list {
+  @include reset-list;
+  display: grid;
+  gap: 20px;
 }

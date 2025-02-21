@@ -1,0 +1,122 @@
+.footer__wrapper {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 20px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 40px 30px;
+  }
+}
+
+.footer__without-developer-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+  }
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 318px;
+    margin: 0;
+  }
+}
+
+.footer__logo {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.footer__caption {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+
+  margin: 0 0 50px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer__content-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+  }
+}
+
+.footer__developer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bdbdbd;
+  text-align: center;
+  transition: color 0.4s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: #593cac;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $bg-secondary;
+  }
+
+  &:active::after {
+    background-color: #593cac;
+  }
+}
+
+.footer__developer::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  right: -20px;
+  left: -20px;
+  height: 1px;
+  background-color: #f0ebff;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.footer__developer::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 16px;
+  background-color: #bdbdbd;
+  mask-image: url("../../icons/stack.svg#developer-logo-icon");
+  mask-size: 12px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transition: background-color 0.4s ease;
+}
