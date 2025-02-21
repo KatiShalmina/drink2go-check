@@ -1,0 +1,55 @@
+.social {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: background-color 0.4s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #f0ebff;
+  }
+
+  &:active {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #bdbdbd;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: background-color 0.4s ease;
+  }
+
+  &:hover::after,
+  &:focus-visible::after,
+  &:active::after {
+    background-color: $bg-secondary;
+  }
+}
+
+.social__link--vk::after {
+  mask-image: url("../../icons/stack.svg#social-vk");
+  mask-size: 20px 20px;
+}
+
+.social__link--pinterest::after {
+  mask-image: url("../../icons/stack.svg#social-pinterest");
+  mask-size: 22px 22px;
+}
+
+.social__link--ok::after {
+  mask-image: url("../../icons/stack.svg#social-ok");
+  mask-size: 20px 20px;
+}

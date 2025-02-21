@@ -135,7 +135,7 @@
         <p class="catalog__badge badge"><strong>Каталог</strong></p>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
         <div class="catalog__filter filter">
-          <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__unit">
               <legend class="filter__unit-title">Цена</legend>
               <div class="filter__price-range range-slider">
@@ -197,8 +197,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter__button button" type="submit">Применить</button>
-            <button class="filter__button button" type="reset">Сбросить</button>
+            <div class="filter__button-wrapper">
+              <button class="filter__button button" type="submit">Применить</button>
+              <button class="filter__button button filter__button--reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
         <div class="catalog__sorting sorting">
@@ -214,80 +216,99 @@
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#" tabindex="-1">
               <picture>
-                <img class="product-card__image" src="#" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
+                <source width="130" height="188" type="image/webp" srcset="images/catalog-product-1@1x.webp 1x, images/catalog-product-1@2x.webp 2x">
+                <img class="product-card__image" src="images/catalog-product-1@1x.png" srcset="images/catalog-product-1@2x.png 2x" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
               </picture>
             </a>
             <a class="product-card__title-link" href="#">
               <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <span class="product-card__price price">225₽</span>
-            <button class="product-card__button" type="button">В корзину</button>
+            <div class="product-card__button-wrapper">
+              <span class="product-card__price price">225₽</span>
+              <button class="product-card__button button" type="button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#" tabindex="-1">
               <picture>
-                <img class="product-card__image" src="#" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
+                <source width="130" height="188" type="image/webp" srcset="images/catalog-product-2@1x.webp 1x, images/catalog-product-2@2x.webp 2x">
+                <img class="product-card__image" src="images/catalog-product-2@1x.png" srcset="images/catalog-product-2@2x.png 2x" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
               </picture>
             </a>
             <a class="product-card__title-link" href="#">
               <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <span class="product-card__price price">225₽</span>
-            <button class="product-card__button" type="button">В корзину</button>
+            <div class="product-card__button-wrapper">
+              <span class="product-card__price price">225₽</span>
+              <button class="product-card__button button" type="button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#" tabindex="-1">
               <picture>
-                <img class="product-card__image" src="#" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
+                <source width="130" height="188" type="image/webp" srcset="images/catalog-product-3@1x.webp 1x, images/catalog-product-3@2x.webp 2x">
+                <img class="product-card__image" src="images/catalog-product-3@1x.png" srcset="images/catalog-product-3@2x.png 2x" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
+              </picture>
               </picture>
             </a>
             <a class="product-card__title-link" href="#">
               <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <span class="product-card__price price">225₽</span>
-            <button class="product-card__button" type="button">В корзину</button>
+            <div class="product-card__button-wrapper">
+              <span class="product-card__price price">225₽</span>
+              <button class="product-card__button button" type="button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#" tabindex="-1">
               <picture>
-                <img class="product-card__image" src="#" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
+                <source width="130" height="188" type="image/webp" srcset="images/catalog-product-4@1x.webp 1x, images/catalog-product-4@2x.webp 2x">
+                <img class="product-card__image" src="images/catalog-product-4@1x.png" srcset="images/catalog-product-4@2x.png 2x" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
               </picture>
             </a>
             <a class="product-card__title-link" href="#">
               <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <span class="product-card__price price">225₽</span>
-            <button class="product-card__button" type="button">В корзину</button>
+            <div class="product-card__button-wrapper">
+              <span class="product-card__price price">225₽</span>
+              <button class="product-card__button button" type="button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#" tabindex="-1">
               <picture>
-                <img class="product-card__image" src="#" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
+                <source width="130" height="188" type="image/webp" srcset="images/catalog-product-5@1x.webp 1x, images/catalog-product-5@2x.webp 2x">
+                <img class="product-card__image" src="images/catalog-product-5@1x.png" srcset="images/catalog-product-5@2x.png 2x" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
               </picture>
             </a>
             <a class="product-card__title-link" href="#">
               <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <span class="product-card__price price">225₽</span>
-            <button class="product-card__button" type="button">В корзину</button>
+            <div class="product-card__button-wrapper">
+              <span class="product-card__price price">225₽</span>
+              <button class="product-card__button button" type="button">В корзину</button>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#" tabindex="-1">
               <picture>
-                <img class="product-card__image" src="#" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
+                <source width="130" height="188" type="image/webp" srcset="images/catalog-product-6@1x.webp 1x, images/catalog-product-6@2x.webp 2x">
+                <img class="product-card__image" src="images/catalog-product-6@1x.png" srcset="images/catalog-product-6@2x.png 2x" width="130" height="188" alt="Кофейный напиток Декаф Флэт Уайт">
               </picture>
             </a>
             <a class="product-card__title-link" href="#">
               <h3 class="product-card__title">Декаф Флэт Уайт</h3>
             </a>
             <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <span class="product-card__price price">225₽</span>
-            <button class="product-card__button" type="button">В корзину</button>
+            <div class="product-card__button-wrapper">
+              <span class="product-card__price price">225₽</span>
+              <button class="product-card__button button" type="button">В корзину</button>
+            </div>
           </li>
         </ul>
         <ul class="catalog__pagination pagination">
@@ -314,73 +335,96 @@
       </div>
     </section>
     <aside class="map">
+
       <picture>
-        <img class="map__image" src="#" width="320" height="420" alt="Карта с локацией компании">
+        <source width="1440" height="560" type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+        <source width="768" height="480" type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+        <source width="320" height="420" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+
+        <source width="1440" height="560" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source width="768" height="480" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="420" alt="Карта с локацией компании">
       </picture>
+
     </aside>
   </main>
 
   <footer class="footer">
-    <a class="footer__logo logo" href="index.html" aria-current="page">
-      <picture>
-        <img class="logo__trademark" src="#" width="82" height="36" alt="Логотип компании Drink2Go">
-      </picture>
-      <span class="logo__caption">Интернет-магазин кофейных напитков</span>
-    </a>
-    <ul class="footer__social-list social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <span class="visually-hidden">Мы ВКонтакте.</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <span class="visually-hidden">Мы в Pinterest.</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <span class="visually-hidden">Мы в Одноклассниках.</span>
-        </a>
-      </li>
-    </ul>
-    <h4 class="footer__title">Интернет-магазин</h4>
-    <ul class="footer__navigation-list">
-      <li class="footer__navigation-item">
-        <a class="footer__navigation-link" href="#">Каталог</a>
-      </li>
-      <li class="footer__navigation-item">
-        <a class="footer__navigation-link" href="#">Доставка</a>
-      </li>
-      <li class="footer__navigation-item">
-        <a class="footer__navigation-link" href="#">Способы оплаты</a>
-      </li>
-      <li class="footer__navigation-item">
-        <a class="footer__navigation-link" href="#">О нас</a>
-      </li>
-    </ul>
-    <h4 class="footer__title">Медиа</h4>
-    <ul class="footer__media-list">
-      <li class="footer__media-item">
-        <a class="footer__media-link" href="#">Блог</a>
-      </li>
-      <li class="footer__media-item">
-        <a class="footer__media-link" href="#">Информация для СМИ</a>
-      </li>
-      <li class="footer__media-item">
-        <a class="footer__media-link" href="#">Правовая информация</a>
-      </li>
-    </ul>
-    <h4 class="footer__title">Контакты</h4>
-    <ul class="footer__contacts contacts">
-      <li>
-        <address class="contacts__adress">Санкт-Петербург, набережная реки Карповки, дом 5</address>
-      </li>
-      <li>
-        <a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
-      </li>
-    </ul>
-    <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy</a>
+    <div class="footer__wrapper section-wrapper">
+      <div class="footer__without-developer-wrapper">
+        <div class="footer__logo-wrapper">
+          <a class="footer__logo logo" href="index.html" aria-current="page">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/logo-desktop.svg" width="170" height="36" type="image/svg+xml">
+              <img class="logo__trademark" src="images/logo-tablet.svg" width="82" height="36" alt="Логотип компании Drink2Go">
+            </picture>
+          </a>
+          <p class="footer__caption">Интернет-магазин кофейных напитков</p>
+          <ul class="footer__social-list social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">Мы ВКонтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="#">
+                <span class="visually-hidden">Мы в Pinterest.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#">
+                <span class="visually-hidden">Мы в Одноклассниках.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content-wrapper">
+          <div class="footer__navigation footer-section">
+            <h4 class="footer-section__title">Интернет-магазин</h4>
+            <ul class="footer-section__list">
+              <li class="footer-section__item">
+                <a class="footer-section__link" href="#">Каталог</a>
+              </li>
+              <li class="footer-section__item">
+                <a class="footer-section__link" href="#">Доставка</a>
+              </li>
+              <li class="footer-section__item">
+                <a class="footer-section__link" href="#">Способы оплаты</a>
+              </li>
+              <li class="footer-section__item">
+                <a class="footer-section__link" href="#">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__media footer-section">
+            <h4 class="footer-section__title">Медиа</h4>
+            <ul class="footer-section__list">
+              <li class="footer-section__item">
+                <a class="footer-section__link" href="#">Блог</a>
+              </li>
+              <li class="footer-section__item">
+                <a class="footer-section__link" href="#">Информация для СМИ</a>
+              </li>
+              <li class="footer-section__item">
+                <a class="footer-section__link" href="#">Правовая информация</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts footer-section">
+            <h4 class="footer-section__title">Контакты</h4>
+            <ul class="footer-section__list contacts">
+              <li class="contacts__item">
+                <address class="contacts__adress">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy</a>
+    </div>
   </footer>
 </body>
 

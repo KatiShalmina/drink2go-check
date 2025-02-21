@@ -1,0 +1,52 @@
+.sorting {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: 0 0 16px;
+}
+
+.sorting__label {
+  @include font-600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sorting__list {
+  @include font-600;
+  padding: 4px 30px 4px 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-primary;
+  background-color: $bg-primary;
+  border: none;
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #f0ebff;
+  }
+}
+
+.sorting::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 11px;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-image: url("../../icons/stack.svg#select-icon");
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+  transition: transform 0.4s ease;
+  pointer-events: none;
+}
+
+.sorting:active::after {
+  transform: translateY(-50%) rotate(180deg);
+}

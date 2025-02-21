@@ -118,6 +118,11 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
   }
 }
 
@@ -153,45 +158,24 @@
   width: 20px;
   height: 20px;
   top: 50%;
-  background-color: transparent;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: none;
   cursor: pointer;
 }
 
 .slider__arrow-button--backward::after {
-  left: 0;
   background-image: url("../../icons/stack.svg#slider-button-backward");
   background-size: 11px 20px;
   background-repeat: no-repeat;
   background-position: center;
-
-  @media (min-width: $tablet-width) {
-    top: 39%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 50%;
-  }
 }
 
 .slider__arrow-button--forward::after {
-  right: 0;
   background-image: url("../../icons/stack.svg#slider-button-forward");
   background-size: 11px 20px;
   background-repeat: no-repeat;
   background-position: center;
-
-  @media (min-width: $tablet-width) {
-    top: 39%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 50%;
-  }
 }
 
 .slider__pagination {
@@ -212,12 +196,24 @@
     display: block;
     width: 62px;
     height: 4px;
+    padding: 0;
     background-color: $bg-base;
     border: none;
     cursor: pointer;
+    transition: background-color 0.4s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-color: rgba(120, 89, 207, 0.25);
+    }
+
+    &:active {
+      background-color: $bg-secondary;
+    }
   }
 }
 
 .slider__button-pagination--current {
   background-color: $bg-secondary;
+  pointer-events: none;
 }

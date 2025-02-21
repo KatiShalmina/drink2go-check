@@ -1,0 +1,11 @@
+.pagination {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination__caption {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
