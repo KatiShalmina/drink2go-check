@@ -4,6 +4,28 @@
 
 .catalog__wrapper {
   padding: 50px 20px 44px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 20px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
+}
+
+.catalog__filter-product-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.catalog__product-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-items: end;
+  }
 }
 
 .catalog__badge {
@@ -16,10 +38,42 @@
   font-size: 24px;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 36px;
+  }
+}
+
+.catalog__sorting {
+  margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px;
+  }
 }
 
 .catalog__list {
   @include reset-list;
   display: grid;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 349px);
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 317px);
+  }
 }

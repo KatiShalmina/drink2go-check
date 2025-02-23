@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
-  margin: 0 0 16px;
 }
 
 .sorting__label {
@@ -24,6 +23,7 @@
   border-radius: 4px;
   appearance: none;
   cursor: pointer;
+  transition: background-color 0.4s ease;
 
   &:hover,
   &:focus-visible {
