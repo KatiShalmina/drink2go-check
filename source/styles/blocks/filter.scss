@@ -1,44 +1,222 @@
+.filter {
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
+}
+
 .filter__form {
   margin: 0 0 40px;
 }
 
+.filter__unit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
 .filter__unit {
-  margin: 0 0 30px;
+  margin: 0 0 10px;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+    margin: 0 0 20px;
+  }
 }
 
 .filter__unit-title {
+  @include font-600;
+  margin: 0 0 20px;
   padding: 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .filter__list {
   @include reset-list;
 }
 
-.filter__input--country {
-  appearance: none;
+.filter__input-wrapper {
+  display: flex;
 }
 
-.filter__item:has(.filter__input--country:hover) {
-  opacity: 0.5;
+.filter__label {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.filter__input {
+  appearance: none;
+  margin: 0 0 20px;
+  cursor: pointer;
 }
 
 .filter__input--milk {
-  appearance: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: $bg-base;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+  transition: border-color 0.4s ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: #9070ec;
+  }
+
+  &:disabled {
+    border-color: #e2e2e2;
+  }
 }
+
+.filter__input--milk::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.4s ease;
+}
+
+.filter__input--milk:hover::after,
+.filter__input--milk:focus-visible::after {
+  background-color: rgba(120, 89, 207, 0.25);
+}
+
+.filter__input--milk:checked {
+  border: 2px solid $bg-secondary;
+}
+
+.filter__input--milk:checked::after {
+  background-color: $bg-secondary;
+}
+
+.filter__item:has(.filter__input:disabled) {
+  color: #bdbdbd;
+  pointer-events: none;
+}
+
+.filter__input--milk:checked:disabled {
+  border: 2px solid #e2e2e2;
+}
+
+.filter__input--milk:checked:disabled::after {
+  background-color: #e2e2e2;
+}
+
+.filter__input--country {
+  position: relative;
+  width: 42px;
+  height: 24px;
+  background-color: #bdbdbd;
+  border-radius: 12px;
+  transition: background-color 0.4s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgba(120, 89, 207, 0.25);
+    border: 2px solid #9070ec;
+  }
+
+  &:disabled {
+    background-color: #e2e2e2;
+  }
+}
+
+.filter__input--country::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: $bg-base;
+  border-radius: 50%;
+  transition:
+    background-color 0.4s ease,
+    transform 0.4s ease;
+}
+
+.filter__input--country:hover::after,
+.filter__input--country:focus-visible::after {
+  top: 0;
+  left: 0;
+}
+
+.filter__input--country:checked {
+  background-color: $bg-secondary;
+}
+
+.filter__input--country:checked::after {
+  right: -2px;
+  bottom: -2px;
+  transform: translateX(18px);
+}
+
+.filter__input--country:checked:disabled {
+  background-color: #e2e2e2;
+}
+
+.filter__input--country:checked:disabled::after {
+  top: 0;
+  right: 0;
+  background-color: #bdbdbd;
+}
+
 
 .filter__button-wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-self: center;
+    width: 277px;
+  }
 }
 
 .filter__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+  }
 }
 
 .filter__button--reset {
+  width: 120px;
   color: $color-primary;
   background-color: $bg-base;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+
+
+  &:hover,
+  &:focus-visible {
+    color: $color-secondary;
+  }
+
+  &:active {
+    color: $color-secondary;
+  }
+
+  &:disabled {
+    color: $color-secondary;
+    background-color: #e2e2e2;
+  }
 }

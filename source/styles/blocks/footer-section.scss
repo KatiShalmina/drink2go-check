@@ -14,6 +14,10 @@
   line-height: 20px;
   margin: 0 0 10px;
   color: $color-primary;
+
+  @media (min-width: $desktop-width) {
+    margin: 9px 0 10px;
+  }
 }
 
 .footer-section__title::before {
@@ -35,14 +39,14 @@
 }
 
 .footer-section__item:last-child {
-  margin: 0 0 49px;
+  margin: 0 0 39px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 28px;
+    margin: 0 0 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 18px;
+    margin: 0 0 8px;
   }
 }
 
