@@ -1,11 +1,18 @@
 .logo {
   display: block;
+  width: 32px;
+  height: 36px;
   transition: opacity 0.4s ease;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 316px;
   }
 
   &:hover,
@@ -20,6 +27,16 @@
 
 .logo__trademark {
   display: block;
+  width: 32px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 }
 
 .logo__caption {
@@ -33,3 +50,4 @@
     color: $color-base;
   }
 }
+

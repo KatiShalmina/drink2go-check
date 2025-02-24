@@ -39,6 +39,13 @@
 }
 
 .footer__logo {
+  width: 82px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 0 10px;
   }

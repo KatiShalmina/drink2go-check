@@ -87,9 +87,10 @@
 }
 
 .slider__button-wrapper {
+  justify-self: center;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
   width: 230px;
 
   @media (min-width: $tablet-width) {
@@ -97,7 +98,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: start;
+    justify-self: start;
   }
 }
 
