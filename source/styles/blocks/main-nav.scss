@@ -1,3 +1,7 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   @include reset-list;
   display: none;
@@ -15,17 +19,23 @@
 }
 
 .main-nav__link {
+  display: block;
   @include font-500;
+  padding: 20px 0 21px;
   font-size: 12px;
   line-height: 16px;
   color: $color-base;
+  background-color: $bg-base;
   text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid #f0ebff;
   transition:
     color 0.4s ease,
     background-color 0.4s ease;
 
   @media (min-width: $tablet-width) {
     padding: 10px 21px;
+    border: none;
   }
 
   &:hover,
@@ -40,8 +50,10 @@
 }
 
 .main-nav__link--current {
-  position: relative;
-  color: $color-primary;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    color: $color-primary;
+  }
 }
 
 .main-nav__link--current::after {
@@ -54,5 +66,19 @@
     bottom: -21px;
     height: 2px;
     background-color: $bg-secondary;
+  }
+}
+
+.main-nav__list--open {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: -150px;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 323px;
   }
 }
