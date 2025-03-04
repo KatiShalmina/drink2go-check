@@ -19,8 +19,8 @@
 }
 
 .main-nav__link {
-  display: block;
   @include font-500;
+  display: block;
   padding: 20px 0 21px;
   font-size: 12px;
   line-height: 16px;
@@ -77,8 +77,7 @@
     left: -150px;
     z-index: 1;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     width: 323px;
   }
 }
