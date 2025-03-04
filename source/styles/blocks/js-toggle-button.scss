@@ -14,3 +14,8 @@
 .js-toggle-button:active {
   background-color: #f0ebff;
 }
+
+.js-toggle-button--close {
+  background-image: url("../../icons/stack.svg#burger-icon-close");
+  background-size: 12px 12px;
+}
